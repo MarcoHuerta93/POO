@@ -3,7 +3,7 @@ public class EjemploAutomovil {
     public static void main(String[] args) {
 
 
-        Automovil subaru = new Automovil();//objeto
+        Automovil subaru = new Automovil();//se crea el objeto para la instancia de la clase
 
         subaru.fabricante = "Subaru";
         subaru.modelo = "Impreza";
@@ -17,12 +17,10 @@ public class EjemploAutomovil {
         mazda.cilindrada = 3.0;
         mazda.color = "Rojo";
 
-        System.out.println(subaru.detalle());
-        System.out.println(mazda.detalle());
-
-
-
-
+        System.out.println(subaru.verDetalle());
+        System.out.println(mazda.verDetalle());
+        System.out.println(subaru.acelerar(3000));
+        System.out.println(subaru.frenar());
 
     }
 }
