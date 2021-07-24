@@ -20,5 +20,12 @@ public class Automovil {
         return this.fabricante + " " + this.modelo + " frenando!";
     }
 
+    public String acelararFrenar(int rpm){
+        String acelerar = this.acelerar(rpm);
+        String frenar = this.frenar();
+        return acelerar + " \n " + frenar;
+
+    }
+
 
 }

@@ -22,5 +22,7 @@ public class EjemploAutomovil {
         System.out.println(subaru.acelerar(3000));
         System.out.println(subaru.frenar());
 
+        System.out.println(mazda.acelararFrenar(4000));
+
     }
 }
