@@ -5,17 +5,18 @@ public class EjemploAutomovil {
 
         Automovil subaru = new Automovil();//se crea el objeto para la instancia de la clase
 
-        subaru.fabricante = "Subaru";
-        subaru.modelo = "Impreza";
-        subaru.cilindrada = 2.0;
-        subaru.color = "Blanco";
+        subaru.asignarFabricante("Subaru");
+        subaru.asignarModel("Impreza");
+        subaru.asignarCilindrada(2.0);
+        subaru.asignarColor("Blanco");
 
         Automovil mazda = new Automovil();//
 
-        mazda.fabricante = "Mazda";
-        mazda.modelo = "BT-50";;
-        mazda.cilindrada = 3.0;
-        mazda.color = "Rojo";
+        mazda.asignarFabricante("Mazda");
+        mazda.asignarModel("BT-50");
+        mazda.asignarCilindrada(3.0);
+        mazda.asignarColor("Rojo");
+        System.out.println("Mazda fabricante = " + mazda.leerFabricante());
 
         System.out.println(subaru.verDetalle());
         System.out.println(mazda.verDetalle());
